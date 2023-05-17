@@ -1,0 +1,13 @@
+{
+	"Bug_id":"1",
+	"Priority":"Hidht",
+	"Summary":"Label 'пусто' is displayed on the cart even when product was added",
+	"Steps to reproduce":
+	{
+	"1": :"Open the page http://prestashop.qatestlab.com.ua",
+	"2": "Add any product to the cart",
+	"3": "Observe the cart on the header"
+	},
+	"Actual result":"Label 'пусто' is displayed, there is no counter on the cart"
+	"Expected result":"Counter is displayed on the cart to show the number of inside, 'пусто' label is not displayed"
+}
