@@ -1,0 +1,2 @@
+My name is Oleh Schurko, I`m a QA Engineer 
+I graduated from Hillel Computer School with an Excellent certificate.  During my studies, I was in the first ranking lists.  I also led the project throughout my studies.  Thanks to my education, I will be a great addition to your team.
