@@ -1,0 +1,16 @@
+{
+	"TestCase_id":"1",
+	"Module":"Email",
+	"Summary":"Check the possibility to restore access with an incorrect email",
+	"Steps":
+	{
+		"1": "open page https://qauto2.forstudy.space/",
+		"2": "click on the button "Sign In"",
+		"3": "click on the button "Forgot password"",
+		"4": "click on the email field ",
+		"5": "enter in the email field alex.email.com",
+		"6": "click on the button "Send""
+	},
+	"Expected result": "The text "Email is incorrect" appear under the "Email" field. The field has border color red."
+	
+}
