@@ -1,0 +1,54 @@
+public class AuthorizationTest {
+   import io.github.bonigarcia.wdm.WebDriverManager;
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.chrome.ChromeDriver;
+{
+        public AuthorizationTest() {
+        }
+
+        public static void main(String[] args) {
+            WebDriverManager.chromedriver().setup();
+            WebDriver driver = new ChromeDriver();
+            driver.get("https://the-internet.herokuapp.com/login");
+            String title = driver.getTitle();
+            System.out.println(title);
+            driver.quit();
+        }
+    }
+    
+    public class Data {
+        public String getUrl = "https://the-internet.herokuapp.com/login";
+        public String username = "Oleh123";
+        public String password = "12345678";
+        public String userName = "@@@@";
+        public String passWord = "=-=987";
+
+        public Data() {
+        }
+    }
+    import org.junit.Test;
+    import org.openqa.selenium.By;
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.chrome.ChromeDriver;
+
+    public class Authorization {
+        WebDriver driver = new ChromeDriver();
+        Data getDate = new Data();
+        private By imputEmail = By.xpath("//*[@id=\"username\"]");
+        private By imputpassword = By.xpath("//*[@id=\"password\"]");
+        private By buttonLogin = By.xpath("//*[@id=\"login\"]/button");
+
+        public Authorization() {
+        }
+
+        @Test
+        public void authorization() {
+            this.driver.get(this.getDate.getUrl);
+            this.driver.manage().window().maximize();
+            this.driver.findElement(this.imputEmail).sendKeys(new CharSequence[]{this.getDate.username});
+            this.driver.findElement(this.imputpassword).sendKeys(new CharSequence[]{this.getDate.password});
+            this.driver.findElement(this.buttonLogin).click();
+        }
+    }
+
+}
